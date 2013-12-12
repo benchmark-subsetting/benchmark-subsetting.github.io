@@ -1,0 +1,88 @@
+CodeletName,Bottleneck,L1 bound per SV-Node,Algorithm,Reduction/Recurrences,Array Access: Stride,Vectorization,Course,size
+balanc_3_dp_sse,Dispatch,Both,DP: Vector multiply element wise,No,1,V,1D Loops / 2D Arrays,normal
+elmhes_10_dp_sse,Dispatch,LS,DP: Linear combination of matrix columns,No,1,V,1D Loops / 2D Arrays,normal
+elmhes_11_dp_sse,Dispatch,LS,DP: Linear combination of matrix rows,No, LDA,S,1D Loops / 2D Arrays,normal
+four1_2_mp_sse,Dispatch,FP,MP: First step FFT,No,4,S,2D Loops / 1D Arrays,normal
+hqr_12_sp_sse,Dispatch,FP,SP: Sum of the lower half of a square matrix,Yes,0 & 1,V,2D Triangular/ 2D Arrays,normal
+hqr_12_square_sp_sse,Dispatch,FP,SP: Sum of a square matrix,Yes,0 & 1,V,2D Loops/ 2D Arrays,normal
+hqr_13_dp_sse,Data Dependencies,FP,DP: Sum of the absolute values of a matrix column,Yes,0 & 1,V,1D Loops / 2D Arrays,normal
+hqr_15_sp_sse,Dispatch,FP,SP: Addition on the diagonal elements of a matrix,No,LDA + 1,S,1D Loops / 2D Arrays,normal
+jacobi_5_sp_sse,Dispatch,FP,SP: Sum of the upper half of a square matrix,Yes,0 & 1,V,2D Triangular/ 2D Arrays,normal
+lop_13_dp_sse,Dispatch,FP,DP: Laplacian finite difference constant coefficients,No,stencil,V,2D Loops / 2D Arrays,normal
+ludcmp_4_sp_sse,Dispatch,LS,SP: Dot product over lower half square matrix,Yes,0 & LDA & 1,V + S,2D Triangular/ 2D Arrays,normal
+matadd_16_dp_sse,Dispatch,LS,DP: Sum of two square matrices element wise,No,1,V,2D Loops / 2D Arrays,normal
+mprove_8_mp_sse,Dispatch,FP,MP: Dense Matrix x vector product,Yes,0 & 1,V + S,2D Loops / 1D and 2D Arrays,normal
+mprove_9_dp_sse,Dispatch,LS,DP: Substracting a vector with a vector,No,1,V,1D Loops / 1D Arrays,normal
+realft_4_dp_sse,Dispatch,FP,DP: FFT butterfly computation,No, 0 & 2 & -2,S,1D Loops / 1D Arrays,normal
+relax2_26_dp_sse,Div/Sqrt,FP,DP: Red Black Sweeps Laplacian operator,No,LDA & 0,S,3D Loops/ 2D Arrays,normal
+rstrct_29_dp_sse,Dispatch,FP,DP: MG Laplacian fine to coarse mesh transition,No,stencil,V + S,2D Loops / 2D Arrays,normal
+svbksb_3_sp_sse,Data Dependencies,FP,SP: Dense Matrix x vector product,Yes,0 & 1,V,2D Loops / 1D and 2D Arrays,normal
+svdcmp_11_dp_sse,Dispatch,FP,DP: Multiplying a matrix row by a scalar,No, LDA,S,1D Loops / 2D Arrays,normal
+svdcmp_13_dp_sse,Div/Sqrt,FP,DP: Norm + Vector divide,Yes,1,V,1D Loops / 2D Arrays,normal
+svdcmp_14_dp_sse,Div/Sqrt,FP,DP: Vector divide element wise,No,0 & 1,V,1D Loops / 1D and 2D Arrays,normal
+svdcmp_6_dp_sse,Dispatch,FP,DP: Sum of the absolute values of a matrix row,Yes,0 & LDA ,V + S,1D Loops / 2D Arrays,normal
+toeplz_1_dp_sse,Dispatch,FP,DP: 2 simultaneous reductions,Yes,0 & 1 & -1,V + S,1D Loops / 1D Arrays,normal
+toeplz_2_dp_sse,Dispatch,LS,DP: Vector multiply element wise in asc./desc. order,No, 1 &  -1,S,1D Loops / 1D Arrays,normal
+toeplz_3_dp_sse,Data Dependencies,FP,DP: 3 simultaneous reductions,Yes,0 & 1 & -1,V,1D Loops / 1D Arrays,normal
+toeplz_4_dp_sse,Dispatch,FP,DP: Vector multiply in asc./desc. order,No,0 & 1,S,1D Loops / 1D Arrays,normal
+tridag_1_bet1_dt0_sse_initbet1,Div/Sqrt,FP,DP: First order recurrence,Yes,0 & 1,S,1D Loops / 1D Arrays,normal
+tridag_1_dp_sse,Div/Sqrt,FP,DP: First order recurrence,Yes,,,1D Loops / 1D Arrays,normal
+tridag_2_dp_sse,Data Dependencies,FP,DP: First order recurrence,Yes,-1,S,1D Loops / 1D Arrays,normal
+balanc_3_dp_sse__size__small,Dispatch,Both,_S_DP: Vector multiply componentwise,No,1,V,1D Loops / 2D Arrays,small
+elmhes_10_dp_sse__size__small,Dispatch,LS,_S_DP: Linear combination of matrix colums,No,1,V,1D Loops / 2D Arrays,small
+elmhes_11_dp_sse__size__small,Dispatch,LS,_S_DP: Linear combination of matrix rows,No, LDA,S,1D Loops / 2D Arrays,small
+four1_2_mp_sse__size__small,Dispatch,FP,_S_MP: First step FFT,No,4,S,2D Loops / 1D Arrays,small
+hqr_12_sp_sse__size__small,Dispatch,FP,_S_SP: Sum of the lower half of a square matrix,Yes,0 & 1,V,2D Triangular/ 2D Arrays,small
+hqr_12_square_sp_sse__size__small,Dispatch,FP,_S_SP: Sum of a square matrix,Yes,0 & 1,V,2D Loops/ 2D Arrays,small
+hqr_13_dp_sse__size__small,Data Dependencies,FP,_S_DP:Sum of the absolute values of a matrix column,Yes,0 & 1,V,1D Loops / 2D Arrays,small
+hqr_15_sp_sse__size__small,Dispatch,FP,_S_SP: Addition on the diagonal elements of a square matrix,No,LDA + 1,S,1D Loops / 2D Arrays,small
+jacobi_5_sp_sse__size__small,Dispatch,FP,_S_SP: Sum of the upper half of a square matrix,Yes,0 & 1,V,2D Triangular/ 2D Arrays,small
+lop_13_dp_sse__size__small,Dispatch,FP,_S_DP: Laplacian Finite Difference constant coefficients,No,stencil,V,2D Loops / 2D Arrays,small
+ludcmp_4_sp_sse__size__small,Dispatch,LS,_S_SP: Dot product over lower half square matrix,Yes,0 & LDA & 1,V + S,2D Triangular/ 2D Arrays,small
+matadd_16_dp_sse__size__small,Dispatch,LS,_S_DP: Sum of two square matrices element wise,No,1,V,2D Loops / 2D Arrays,small
+mprove_8_mp_sse__size__small,Dispatch,FP,_S_MP: Dense Matrix x vector product,Yes,0 & 1,V + S,2D Loops / 1D and 2D Arrays,small
+mprove_9_dp_sse__size__small,Dispatch,LS,_S_DP: Substracting a vector with a vector,No,1,V,1D Loops / 1D Arrays,small
+realft_4_dp_sse__size__small,Dispatch,FP,_S_DP: FFT butterfly computation,No, 0 & 2 & -2,S,1D Loops / 1D Arrays,small
+relax2_26_dp_sse__size__small,Div/Sqrt,FP,_S_DP: Red Black Sweeps Laplacian Operator constant coefficients,No,LDA & 0,S,3D Loops/ 2D Arrays,small
+rstrct_29_dp_sse__size__small,Dispatch,FP,_S_DP: Multigrid Laplacian Fine to Coarse mesh transition,No,stencil,V + S,2D Loops / 2D Arrays,small
+svbksb_3_sp_sse__size__small,Data Dependencies,FP,_S_SP: Dense Matrix x vector product,Yes,0 & 1,V,2D Loops / 1D and 2D Arrays,small
+svdcmp_11_dp_sse__size__small,Dispatch,FP,_S_DP: Multiplying a matrix row by a scalar,No, LDA,S,1D Loops / 2D Arrays,small
+svdcmp_13_dp_sse__size__small,Div/Sqrt,FP,_S_DP: Norm + Vector divide,Yes,1,V,1D Loops / 2D Arrays,small
+svdcmp_14_dp_sse__size__small,Div/Sqrt,FP,_S_DP: Vector divide componentwise,No,0 & 1,V,1D Loops / 1D and 2D Arrays,small
+svdcmp_6_dp_sse__size__small,Dispatch,FP,_S_DP: Sum of the absolute values of a matrix row,Yes,0 & LDA ,V + S,1D Loops / 2D Arrays,small
+toeplz_1_dp_sse__size__small,Dispatch,FP,_S_DP: 2 simultaneous reductions,Yes,0 & 1 & -1,V + S,1D Loops / 1D Arrays,small
+toeplz_2_dp_sse__size__small,Dispatch,LS,_S_DP: Vector multiply componentwise in asc./desc. order,No, 1 &  -1,S,1D Loops / 1D Arrays,small
+toeplz_3_dp_sse__size__small,Data Dependencies,FP,_S_DP: 3 simultaneous reductions,Yes,0 & 1 & -1,V,1D Loops / 1D Arrays,small
+toeplz_4_dp_sse__size__small,Dispatch,FP,_S_DP: Vector multiply in asc./desc. order,No,0 & 1,S,1D Loops / 1D Arrays,small
+tridag_1_bet1_dt0_sse_initbet1__size__small,Div/Sqrt,FP,_S_DP: First order recurrence,Yes,0 & 1,S,1D Loops / 1D Arrays,small
+tridag_1_dp_sse__size__small,Div/Sqrt,FP,_S_DP: First order recurrence,Yes,,,1D Loops / 1D Arrays,small
+tridag_2_dp_sse__size__small,Data Dependencies,FP,_S_DP: First order recurrence,Yes,-1,S,1D Loops / 1D Arrays,small
+balanc_3_dp_sse__size__big,Dispatch,Both,_B_DP: Vector multiply componentwise,No,1,V,1D Loops / 2D Arrays,big
+elmhes_10_dp_sse__size__big,Dispatch,LS,_B_DP: Linear combination of matrix colums,No,1,V,1D Loops / 2D Arrays,big
+elmhes_11_dp_sse__size__big,Dispatch,LS,_B_DP: Linear combination of matrix rows,No, LDA,S,1D Loops / 2D Arrays,big
+four1_2_mp_sse__size__big,Dispatch,FP,_B_MP: First step FFT,No,4,S,2D Loops / 1D Arrays,big
+hqr_12_sp_sse__size__big,Dispatch,FP,_B_SP: Sum of the lower half of a square matrix,Yes,0 & 1,V,2D Triangular/ 2D Arrays,big
+hqr_12_square_sp_sse__size__big,Dispatch,FP,_B_SP: Sum of a square matrix,Yes,0 & 1,V,2D Loops/ 2D Arrays,big
+hqr_13_dp_sse__size__big,Data Dependencies,FP,_B_DP: Sum of the absolute values of a matrix column,Yes,0 & 1,V,1D Loops / 2D Arrays,big
+hqr_15_sp_sse__size__big,Dispatch,FP,_B_SP: Addition on the diagonal elements of a square matrix,No,LDA + 1,S,1D Loops / 2D Arrays,big
+jacobi_5_sp_sse__size__big,Dispatch,FP,_B_SP: Sum of the upper half of a square matrix,Yes,0 & 1,V,2D Triangular/ 2D Arrays,big
+lop_13_dp_sse__size__big,Dispatch,FP,_B_DP: Laplacian Finite Difference constant coefficients,No,stencil,V,2D Loops / 2D Arrays,big
+ludcmp_4_sp_sse__size__big,Dispatch,LS,_B_SP: Dot product over lower half square matrix,Yes,0 & LDA & 1,V + S,2D Triangular/ 2D Arrays,big
+matadd_16_dp_sse__size__big,Dispatch,LS,_B_DP: Sum of two square matrices element wise,No,1,V,2D Loops / 2D Arrays,big
+mprove_8_mp_sse__size__big,Dispatch,FP,_B_MP: Dense Matrix x vector product,Yes,0 & 1,V + S,2D Loops / 1D and 2D Arrays,big
+mprove_9_dp_sse__size__big,Dispatch,LS,_B_DP: Substracting a vector with a vector,No,1,V,1D Loops / 1D Arrays,big
+realft_4_dp_sse__size__big,Dispatch,FP,_B_DP: FFT butterfly computation,No, 0 & 2 & -2,S,1D Loops / 1D Arrays,big
+relax2_26_dp_sse__size__big,Div/Sqrt,FP,_B_DP: Red Black Sweeps Laplacian Operator constant coefficients,No,LDA & 0,S,3D Loops/ 2D Arrays,big
+rstrct_29_dp_sse__size__big,Dispatch,FP,_B_DP: Multigrid Laplacian Fine to Coarse mesh transition,No,stencil,V + S,2D Loops / 2D Arrays,big
+svbksb_3_sp_sse__size__big,Data Dependencies,FP,_B_SP: Dense Matrix x vector product,Yes,0 & 1,V,2D Loops / 1D and 2D Arrays,big
+svdcmp_11_dp_sse__size__big,Dispatch,FP,_B_DP: Multiplying a matrix row by a scalar,No, LDA,S,1D Loops / 2D Arrays,big
+svdcmp_13_dp_sse__size__big,Div/Sqrt,FP,_B_DP: Norm + Vector divide,Yes,1,V,1D Loops / 2D Arrays,big
+svdcmp_14_dp_sse__size__big,Div/Sqrt,FP,_B_DP: Vector divide componentwise,No,0 & 1,V,1D Loops / 1D and 2D Arrays,big
+svdcmp_6_dp_sse__size__big,Dispatch,FP,_B_DP: Sum of the absolute values of a matrix row,Yes,0 & LDA ,V + S,1D Loops / 2D Arrays,big
+toeplz_1_dp_sse__size__big,Dispatch,FP,_B_DP: 2 simultaneous reductions,Yes,0 & 1 & -1,V + S,1D Loops / 1D Arrays,big
+toeplz_2_dp_sse__size__big,Dispatch,LS,_B_DP: Vector multiply componentwise in asc./desc. order,No, 1 &  -1,S,1D Loops / 1D Arrays,big
+toeplz_3_dp_sse__size__big,Data Dependencies,FP,_B_DP: 3 simultaneous reductions,Yes,0 & 1 & -1,V,1D Loops / 1D Arrays,big
+toeplz_4_dp_sse__size__big,Dispatch,FP,_B_DP: Vector multiply in asc./desc. order,No,0 & 1,S,1D Loops / 1D Arrays,big
+tridag_1_bet1_dt0_sse_initbet1__size__big,Div/Sqrt,FP,_B_DP: First order recurrence,Yes,0 & 1,S,1D Loops / 1D Arrays,big
+tridag_1_dp_sse__size__big,Div/Sqrt,FP,_B_DP: First order recurrence,Yes,,,1D Loops / 1D Arrays,big
+tridag_2_dp_sse__size__big,Data Dependencies,FP,_B_DP: First order recurrence,Yes,-1,S,1D Loops / 1D Arrays,big

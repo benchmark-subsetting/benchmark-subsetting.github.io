@@ -1,0 +1,8 @@
+This repository contains an Ipython notebook to reproduce the experiments from the paper 
+"Fine-grained Benchmark Subsetting for System Selection".
+
+The IPython Notebook is called "Fine-grained Benchmark Subsetting.ipynb".
+It can be inspected by clicking on it, or downloaded and executed on your machine
+to reproduce our results. 
+
+The raw experimental data is contained in the *.csv and *.list files.
