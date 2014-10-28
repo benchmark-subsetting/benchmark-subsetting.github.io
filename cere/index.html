@@ -1,0 +1,98 @@
+<!DOCTYPE HTML>
+
+<html lang="en">
+<head>
+    <meta name="description" content="Codelet Extractor and REplayer">
+    <meta name="keywords" content="Codelet">
+    <meta name="author" content="Akel Chadi">
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="./css/cere.css" type="text/css" />
+    <title>Codelet Extractor and REplayer</title>
+
+    <!--[if lt IE 9]>
+    <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+</head>
+
+<body>
+
+<div id="menu">
+    <div id="logo"><a href="./index.html"><img src="images/cere-logo.png"
+            alt="CERE" /></a></div>
+    
+<ul>
+    <li><a href="./index.html">What is CERE?</a></li>
+    <li><a href="./index.html">Download CERE</a></li>
+    <li><a href="./index.html">Reports</a></li>
+    <li><a href="./index.html">Contacts</a></li>
+</ul>
+</div>
+
+<div id="main">
+<h1>Codelet Extractor and REplayer</h1>
+
+<h2>What is CERE?</h2>
+    <img src="images/intro_pipe4.png" width="800" height="500″ alt=="CERE steps">
+    <p>CERE takes as an input the source files of an application or a benchmark suite. All
+    the languages supported by the LLVM front-ends (C, C++, Fortran, D, etc.) are
+    accepted. The loops are outlined and instrumented with profiling probes to
+    identify the application hotspots. The hot loops are kept and form the full
+    codelet set. Depending on our goals, we can keep the full set of codelets or
+    prune it to keep a reduced set of representative codelets.
+    Then, a clustering algorithm analyzes the invocation performance trace of each
+    codelet to find a representative subset of invocations. The memory and cache state
+    of each representative invocation is then captured and dumped to disk.
+    The output of this process is a set of representative codelets and invocations,
+    which can be redistributed, recompiled and replayed on different systems and
+    architectures. The codelet set can be used as a proxy for original application
+    in optimization or benchmarking studies.</p>
+
+<h2>Download CERE</h2>
+    <a href="./cere_download.html">CERE sources</a>
+
+<h2>Replay Accuracy Reports</h2>
+<h3>SPEC-CPU-2006:</h3>
+    <nav>
+    <a href="./reports/SPEC-CPU-2006/410-bwaves.html">410-bwaves</a> |
+    <a href="./reports/SPEC-CPU-2006/416-gamess.html">416-gamess</a> |
+    <a href="./reports/SPEC-CPU-2006/433-milc.html">433-milc</a> |
+    <a href="./reports/SPEC-CPU-2006/434-zeusmp.html">434-zeusmp</a> |
+    <a href="./reports/SPEC-CPU-2006/435-gromacs.html">435-gromacs</a> |
+    <a href="./reports/SPEC-CPU-2006/436-cactusADM.html">436-cactusADM.html</a> |
+    <a href="./reports/SPEC-CPU-2006/437-leslie3d.html">437-leslie3d</a> |
+    <a href="./reports/SPEC-CPU-2006/444-namd.html">444-namd</a> |
+    <a href="./reports/SPEC-CPU-2006/447-dealII.html">447-dealII</a> |
+    <a href="./reports/SPEC-CPU-2006/450-soplex.html">450-soplex</a> |
+    <a href="./reports/SPEC-CPU-2006/453-povray.html">453-povray</a> |
+    <a href="./reports/SPEC-CPU-2006/454-calculix.html">454-calculix</a> |
+    <a href="./reports/SPEC-CPU-2006/459-GemsFDTD.html">459-GemsFDTD</a> |
+    <a href="./reports/SPEC-CPU-2006/465-tonto.html">465-tonto</a> |
+    <a href="./reports/SPEC-CPU-2006/470-lbm.html">470-lbm</a> |
+    <a href="./reports/SPEC-CPU-2006/481-wrf.html">481-wrf</a> |
+    <a href="./reports/SPEC-CPU-2006/482-sphynx3.html">482-sphynx3</a> |
+    <a href="./reports/SPEC-CPU-2006/999-specrand.html">999-specrand</a>
+    </nav>
+
+<h3>NAS3.0-SER:</h3>
+    <nav>
+    <a href="./reports/NAS3.0-SER/BT.html">BT.html</a> |
+    <a href="./reports/NAS3.0-SER/CG.html">CG.html</a> |
+    <a href="./reports/NAS3.0-SER/EP.html">EP.html</a> |
+    <a href="./reports/NAS3.0-SER/FT.html">FT.html</a> |
+    <a href="./reports/NAS3.0-SER/IS.html">IS.html</a> |
+    <a href="./reports/NAS3.0-SER/LU.html">LU.html</a> |
+    <a href="./reports/NAS3.0-SER/MG.html">MG.html</a> |
+    <a href="./reports/NAS3.0-SER/SP.html">SP.html</a> |
+    </nav>
+
+<h2>Download NAC C version:</h2>
+    <a href="./index.html">Coming soon</a>
+</div>
+
+</body>
+
+<footer>
+Copyrights
+</footer>
+
+</html>
