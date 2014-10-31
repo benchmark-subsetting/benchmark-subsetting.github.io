@@ -26,14 +26,47 @@
     <li><a href="./index.html#reports">Replay Accuracy Reports</a></li>
     <li><a href="./index.html">Contacts</a></li>
 </ul>
-</div>
+
+</div> <!-- menu -->
 
 <div id="main">
-<h1>CERE download</h1>
+<h1>Downloading CERE</h1>
 
 <h2>CERE sources</h2>
-    <p>Coming soon</p>
-</div>
+    <a href="./index.html">Coming soon</a>
+
+<h1>Installing CERE</h1>
+
+<h2>Prerequisites</h2>
+    <p>CERE requires LLVM and Clang compiler. It works best with LLVM 3.3</p>
+    <ul>
+    <li>You can download LLVM and all its components here: <a href="http://llvm.org/releases/download.html#3.3">LLVM 3.3</a></li>
+    <li>Informations on how to extracte and build LLVM can be found here: <a href="http://llvm.org/docs/GettingStarted.html#getting-started-quickly-a-summary">Building and installing LLVM</a></li>
+    <li>You also need the DragonEgg plugin to compile Fortran code with LLVM: <a href="http://dragonegg.llvm.org">DragonEgg</a></li>
+    <li>If you have difficulties compiling DragonEgg with a GCC > 4.7, consider using GCC 4.7: "update-alternatives --config gcc" to choose between installed version of GCC (Debian/Ubuntu).</li>
+    <li> Finnally install autotools: "sudo apt-get install autotools-dev automake autoconf libtool" (Debian/Ubuntu).</li>
+    </ul>
+
+<h2>Installation</h2>
+    <ol>
+    <li>Unzip CERE.</li>
+    <li>./autogen.sh</li>
+    <li>make</li>
+    <li>To test if everything is working:
+        <ol>
+            <li>cd tests</li>
+            <li>./test.sh</li>
+        </ol>
+    </li>
+    </ol>
+
+<h2>Known Issues</h2>
+    <p>Problems compiling Fortran code with CERE:</p>
+    <ul>
+    <li>Check that DRAGONEGG_PATH in CERE/src/lec/lec is correctly pointing to the file dragonegg.so</li>
+    </ul>
+
+</div> <!-- main -->
 
 </body>
 
