@@ -63,7 +63,9 @@
 <h2>Known Issues</h2>
     <p>Problems compiling Fortran code with CERE:</p>
     <ul>
-    <li>Check that DRAGONEGG_PATH in CERE/src/lec/lec is correctly pointing to the file dragonegg.so</li>
+    <li>Check that DRAGONEGG_PATH in CERE/src/lec/lec is correctly pointing to the file dragonegg.so.</li>
+    <li>By default CERE uses GCC 4.7. If you have compiled Dragonegg with a different version of GCC it might be the cause of your errors.
+    Check that LD in CERE/src/lec/lec and in CERE/src/lel/lel is set to the version of GCC you used to compile Dragonegg.</li>
     </ul>
 
 </div> <!-- main -->
