@@ -1,4 +1,11 @@
 #main {
-  margin-left: 250px;
-  margin-top: -200px;
+    margin-left: 250px;
+    margin-top: -200px;
+    max-width: 800px;
+}
+
+#footer {
+  color: gray;
+  position:relative;
+  font-style: italic;
 }
