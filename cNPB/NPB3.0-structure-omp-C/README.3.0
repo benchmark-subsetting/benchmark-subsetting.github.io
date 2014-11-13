@@ -163,6 +163,6 @@ For more details, refer to file "README.install" in subdirectory "Doc" and to "R
 
 - 3.0 NAS update 
   
-  Information on the NAS Parallel Benchmarks translation from 2.3 to 3.0 is available at https://github.com/benchmark-subsetting/NAS-C-OpenMP3.0
+  Information on the NAS Parallel Benchmarks translation from 2.3 to 3.0 is available at http://benchmark-subsetting.github.io/cNPB/
   Note that NAS does not support the OpenMP C versions nor the Omni OpenMP compiler supports the 3.0 structured NAS.
   License informations about the NAS NPB benchmarks can be found at http://opensource.org/licenses/nasa1.3.php   
