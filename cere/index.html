@@ -23,6 +23,8 @@
     
 <ul>
     <li><a href="./index.html#whatiscere">What is CERE?</a></li>
+    <li><a href="./index.html#publications">Publications</a></li>
+    <li><a href="./index.html#howitworks">How it works?</a></li>
     <li><a href="./index.html#downloadcere">Download CERE</a></li>
     <li><a href="./index.html#reports">Replay Accuracy Reports</a></li>
     <li><a href="./index.html">Contacts</a></li>
@@ -35,29 +37,33 @@
 <h1>Codelet Extractor and REplayer</h1>
 
 <h2 id="whatiscere">What is CERE?</h2>
+
+
+    <img src="images/intro_pipe4.png" alt=="CERE steps">
+
     <p style="text-align:justify;">
-
-Codelet Extractor and REplayer (CERE) is an open source framework for code
-isolation. CERE finds and extracts the hotspots of an application as isolated
-fragments of code, called codelets.  Codelets can be modified, compiled, run,
-and measured independently from the original application. Code isolation
-reduces benchmarking cost and allows piecewise optimization of an application.
-Unlike previous approaches, CERE isolates codes at the compiler Intermediate
-Representation level. Therefore CERE is language agnostic and supports many
-input languages such as C, C++, Fortran, and D. CERE automati- cally detects
-codelets invocation that have the same performance behavior. Then, it selects a
-reduced set of representative codelets and invocations, much faster to replay,
-which still captures accurately the origi- nal application. In addition, CERE
-supports recompiling and retargeting the extracted codelets. Therefore, CERE
-can be used for cross-architecture performance prediction or piecewise code
-optimization. On the SPEC 2006 FP benchmarks, CERE codelets cover 90.9% and
-accurately replay 66.3% of the execution time.  We use CERE codelets in a
-realistic study to evaluate three different architectures on the NAS
-benchmarks.  CERE accurately estimates each architecture performance and is
-7.3 times to 46.6 times cheaper than running the full benchmark.
-
+    Codelet Extractor and REplayer (CERE) is an open source framework for code
+    isolation. CERE finds and extracts the hotspots of an application as isolated
+    fragments of code, called codelets.  Codelets can be modified, compiled, run,
+    and measured independently from the original application. Code isolation
+    reduces benchmarking cost and allows piecewise optimization of an application.
+    Unlike previous approaches, CERE isolates codes at the compiler Intermediate
+    Representation level. Therefore CERE is language agnostic and supports many
+    input languages such as C, C++, Fortran, and D. CERE automati- cally detects
+    codelets invocation that have the same performance behavior. Then, it selects a
+    reduced set of representative codelets and invocations, much faster to replay,
+    which still captures accurately the origi- nal application. In addition, CERE
+    supports recompiling and retargeting the extracted codelets. Therefore, CERE
+    can be used for cross-architecture performance prediction or piecewise code
+    optimization. On the SPEC 2006 FP benchmarks, CERE codelets cover 90.9% and
+    accurately replay 66.3% of the execution time.  We use CERE codelets in a
+    realistic study to evaluate three different architectures on the NAS
+    benchmarks.  CERE accurately estimates each architecture performance and is
+    7.3 times to 46.6 times cheaper than running the full benchmark.
     </p>
 
+
+<h2 id="publications">Publications</h2>
 
     <b>CERE: LLVM based codelet extractor and REplayer for piecewise
         benchmarking and optimization</b>.
@@ -68,6 +74,7 @@ benchmarks.  CERE accurately estimates each architecture performance and is
     [&nbsp;<a href="www.sifflez.org/publications/performance_bib.html#Oliveira2015CERE">bib</a>&nbsp;| 
     <a href="http://dx.doi.org/10.1145/2724717">DOI</a>&nbsp;]
 
+    <br \>
 
     <b>PCERE: Fine-grained Parallel Benchmark Decomposition for Scalability
         Prediction</b>.
@@ -77,13 +84,10 @@ benchmarks.  CERE accurately estimates each architecture performance and is
         Distributed Processing Symposium IPDPS 2015 (to appear)</em>. IEEE, 2015.
     [&nbsp;<a href="www.sifflez.org/publications/performance_bib.html#Popov2015pcere">bib</a>&nbsp;]
 
+    
+<h2 id="howitworks">How it works?</h2>
 
-
-    <img src="images/intro_pipe4.png" alt=="CERE steps">
     <p style="text-align:justify;">
-
-    
-    
     CERE takes as an input the source files of an application or a benchmark
     suite. All the languages supported by the LLVM front-ends (C, C++, Fortran,
     D, etc.) are accepted. The application loops are outlined and instrumented
