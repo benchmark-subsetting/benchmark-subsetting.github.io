@@ -27,7 +27,7 @@
     <li><a href="./index.html#howitworks">How it works?</a></li>
     <li><a href="./index.html#downloadcere">Download CERE</a></li>
     <li><a href="./index.html#reports">Replay Accuracy Reports</a></li>
-    <li><a href="./index.html">Contacts</a></li>
+    <li><a href="./index.html#contacts">Contact</a></li>
 </ul>
 
 </div> <!-- menu -->
@@ -43,15 +43,18 @@
 
     <p style="text-align:justify;">
     Codelet Extractor and REplayer (CERE) is an open source framework for code
-    isolation. CERE finds and extracts the hotspots of an application as isolated
-    fragments of code, called codelets.  Codelets can be modified, compiled, run,
-    and measured independently from the original application. Code isolation
-    reduces benchmarking cost and allows piecewise optimization of an application.
-    Unlike previous approaches, CERE isolates codes at the compiler Intermediate
-    Representation level. Therefore CERE is language agnostic and supports many
-    input languages such as C, C++, Fortran, and D. CERE automati- cally detects
-    codelets invocation that have the same performance behavior. Then, it selects a
-    reduced set of representative codelets and invocations, much faster to replay,
+    isolation developped jointly at <a href="http://www.prism.uvsq.fr/">UVSQ
+    PRiSM lab and <a href="http://www.exascale-computing.eu/">ECR lab</a>. CERE
+    finds and extracts the hotspots of an application as isolated fragments of
+    code, called codelets.  Codelets can be modified, compiled, run, and
+    measured independently from the original application. Code isolation
+    reduces benchmarking cost and allows piecewise optimization of an
+    application.  Unlike previous approaches, CERE isolates codes at the
+    compiler Intermediate Representation level. Therefore CERE is language
+    agnostic and supports many input languages such as C, C++, Fortran, and D.
+    CERE automati- cally detects codelets invocation that have the same
+    performance behavior. Then, it selects a reduced set of representative
+    codelets and invocations, much faster to replay,
     which still captures accurately the origi- nal application. In addition, CERE
     supports recompiling and retargeting the extracted codelets. Therefore, CERE
     can be used for cross-architecture performance prediction or piecewise code
@@ -140,6 +143,12 @@
     <a href="./reports/SPEC-CPU-2006/482-sphinx3.html">482-sphinx3</a> |
     <a href="./reports/SPEC-CPU-2006/999-specrand.html">999-specrand</a>
     </nav>
+
+<h2 id="contact">Contact</h2>
+
+We will soon create a mailing list to discuss CERE development. In the meantime
+please contact <a href="mailto:pablo.oliveira@uvsq.fr">pablo.oliveira@uvsq.fr</a> for any
+question regarding CERE.
 
 </div> <!-- main -->
 
