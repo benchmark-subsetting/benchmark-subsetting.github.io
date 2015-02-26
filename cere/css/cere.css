@@ -58,21 +58,19 @@ p {
 
 /* all links */
 .bs-docs-sidebar .nav>li>a {
-	font-family: "Marvel", sans-serif;
     color: #999;
     border-left: 2px solid transparent;
     padding: 4px 20px;
-    font-size: 25px;
+    font-size: 20px;
     font-weight: 400;
 }
 
 /* nested links */
 .bs-docs-sidebar .nav .nav>li>a {
-	font-family: "Marvel", sans-serif;
     padding-top: 1px;
     padding-bottom: 1px;
     padding-left: 30px;
-    font-size: 20px;
+    font-size: 15px;
 }
 
 /* active & hover links */
