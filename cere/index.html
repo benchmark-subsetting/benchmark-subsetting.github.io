@@ -18,86 +18,86 @@
     <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
     <!--[if lt IE 9]>
-    <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
-    <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
-    <![endif]-->
-       </head>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+        <![endif]-->
+  </head>
 
   <body>
-      <!--Nav Bar -->
-      <nav class="col-xs-3 bs-docs-sidebar">
-        <ul id="sidebar" class="nav nav-stacked fixed">
-          <div class="logo">
-            <a href="./index.html"><img src="images/cere-logo.png" alt="CERE" />
-            </a>
-          </div>
-          <li>
-            <a href="#CERE">Introducing CERE</a>
-            <ul class="nav nav-stacked">
-              <li><a href="#whatiscere">What is CERE?</a></li>
-              <li><a href="#publications">Publications</a></li>
-              <li><a href="#howitworks">How does it works?</a></li>
-              <li><a href="#contact">Get in touch</a></li>
-            </ul>
-          </li>
-          <li>
-            <a href="#GettingCERE">Getting CERE</a>
-            <ul class="nav nav-stacked">
-              <li> <a href="#download">Download CERE</a></li>
-              <li><a href="#install">Installing CERE</a></li>
-            </ul>
-          </li>
-          <li>
-            <a href="#Reports">CERE accuracy reports</a>
-            <ul class="nav nav-stacked">
-              <li><a href="#NASSER">NAS 3.0 SER</a></li>
-              <li><a href="#SPECCPU2006">SPEC CPU 2006</a></li>
-            </ul>
-          </li>
-        </ul>
-      </nav>
+    <!--Nav Bar -->
+    <nav class="col-xs-3 bs-docs-sidebar">
+      <ul id="sidebar" class="nav nav-stacked fixed">
+        <div class="logo">
+          <a href="./index.html"><img src="images/cere-logo.png" alt="CERE" />
+          </a>
+        </div>
+        <li>
+          <a href="#CERE">Introducing CERE</a>
+          <ul class="nav nav-stacked">
+            <li><a href="#whatiscere">What is CERE?</a></li>
+            <li><a href="#publications">Publications</a></li>
+            <li><a href="#howitworks">How does it works?</a></li>
+            <li><a href="#contact">Get in touch</a></li>
+          </ul>
+        </li>
+        <li>
+          <a href="#GettingCERE">Getting CERE</a>
+          <ul class="nav nav-stacked">
+            <li> <a href="#download">Download CERE</a></li>
+            <li><a href="#install">Installing CERE</a></li>
+          </ul>
+        </li>
+        <li>
+          <a href="#Reports">CERE accuracy reports</a>
+          <ul class="nav nav-stacked">
+            <li><a href="#NASSER">NAS 3.0 SER</a></li>
+            <li><a href="#SPECCPU2006">SPEC CPU 2006</a></li>
+          </ul>
+        </li>
+      </ul>
+    </nav>
 
-      <!--Main Content -->
-      <div class="col-xs-9">
+    <!--Main Content -->
+    <div class="col-xs-9">
 
-        <h1>Codelet Extractor and REplayer</h1>
-        <section id="CERE" class="group">
+      <h1>Codelet Extractor and REplayer</h1>
+      <section id="CERE" class="group">
 
-          <h2>Introducing CERE</h2>
-          <div id="whatiscere" class="subgroup">
-            <h3>What is CERE?</h3>
-            <img class="image" src="images/intro_pipe4.png" alt="CERE steps">
+        <h2>Introducing CERE</h2>
+        <div id="whatiscere" class="subgroup">
+          <h3>What is CERE?</h3>
+          <img class="image" src="images/intro_pipe4.png" alt="CERE steps">
 
-            <p>
-              Codelet Extractor and REplayer (CERE) is an open source framework for code
-              isolation developped jointly at <a href="http://www.prism.uvsq.fr/">UVSQ
-                PRiSM lab</a> and <a href="http://www.exascale-computing.eu/">ECR lab</a>. CERE
-              finds and extracts the hotspots of an application as isolated fragments of
-              code, called codelets.  Codelets can be modified, compiled, run, and
-              measured independently from the original application. Code isolation
-              reduces benchmarking cost and allows piecewise optimization of an
-              application.  Unlike previous approaches, CERE isolates codes at the
-              compiler Intermediate Representation level. Therefore CERE is language
-              agnostic and supports many input languages such as C, C++, Fortran, and D.
-              CERE automati- cally detects codelets invocation that have the same
-              performance behavior. Then, it selects a reduced set of representative
-              codelets and invocations, much faster to replay,
-              which still captures accurately the origi- nal application. In addition, CERE
-              supports recompiling and retargeting the extracted codelets. Therefore, CERE
-              can be used for cross-architecture performance prediction or piecewise code
-              optimization. On the SPEC 2006 FP benchmarks, CERE codelets cover 90.9% and
-              accurately replay 66.3% of the execution time.  We use CERE codelets in a
-              realistic study to evaluate three different architectures on the NAS
-              benchmarks.  CERE accurately estimates each architecture performance and is
-              7.3 times to 46.6 times cheaper than running the full benchmark.
-            </p>
+          <p>
+            Codelet Extractor and REplayer (CERE) is an open source framework for code
+            isolation developped jointly at <a href="http://www.prism.uvsq.fr/">UVSQ
+              PRiSM lab</a> and <a href="http://www.exascale-computing.eu/">ECR lab</a>. CERE
+            finds and extracts the hotspots of an application as isolated fragments of
+            code, called codelets.  Codelets can be modified, compiled, run, and
+            measured independently from the original application. Code isolation
+            reduces benchmarking cost and allows piecewise optimization of an
+            application.  Unlike previous approaches, CERE isolates codes at the
+            compiler Intermediate Representation level. Therefore CERE is language
+            agnostic and supports many input languages such as C, C++, Fortran, and D.
+            CERE automatically detects codelets invocation that have the same
+            performance behavior. Then, it selects a reduced set of representative
+            codelets and invocations, much faster to replay,
+            which still captures accurately the original application. In addition, CERE
+            supports recompiling and retargeting the extracted codelets. Therefore, CERE
+            can be used for cross-architecture performance prediction or piecewise code
+            optimization. On the SPEC 2006 FP benchmarks, CERE codelets cover 90.9% and
+            accurately replay 66.3% of the execution time.  We use CERE codelets in a
+            realistic study to evaluate three different architectures on the NAS
+            benchmarks.  CERE accurately estimates each architecture performance and is
+            7.3 times to 46.6 times cheaper than running the full benchmark.
+          </p>
 
 
-          </div>
-          <div id="publications" class="subgroup">
-            <h3>Publications</h3>
+        </div>
+        <div id="publications" class="subgroup">
+          <h3>Publications</h3>
 
-            <p>
+          <p>
             <b>CERE: LLVM based codelet extractor and REplayer for piecewise
               benchmarking and optimization</b>.
             Pablo de&nbsp;Oliveira&nbsp;Castro, Chadi Akel, Eric Petit, Mihail Popov, and
@@ -106,10 +106,10 @@
               appear)</em>, 2015.
             [&nbsp;<a href="http://www.sifflez.org/publications/performance_bib.html#Oliveira2015CERE">bib</a>&nbsp;|
             <a href="http://dx.doi.org/10.1145/2724717">DOI</a>&nbsp;]
-            </p>
+          </p>
 
 
-            <p>
+          <p>
             <b>PCERE: Fine-grained Parallel Benchmark Decomposition for Scalability
               Prediction</b>.
             Mihail Popov, Chadi Akel, Florent Conti, William Jalby, and Pablo
@@ -117,239 +117,239 @@
             In <em>Proceedings of the 29th IEEE International Parallel and
               Distributed Processing Symposium IPDPS 2015 (to appear)</em>. IEEE, 2015.
             [&nbsp;<a href="http://www.sifflez.org/publications/performance_bib.html#Popov2015pcere">bib</a>&nbsp;]
-            </p>
+          </p>
 
-          </div>
-          <div id="howitworks" class="subgroup">
-            <h3>How does it works?</h3>
-            <p>
-              CERE takes as an input the source files of an application or a benchmark
-              suite. All the languages supported by the LLVM front-ends (C, C++, Fortran,
-              D, etc.) are accepted. The application loops are outlined and instrumented
-              with profiling probes to identify the application hotspots. The hot loops
-              are kept and form the full codelet set. CERE can prune this full codelet
-              set and only keep a reduced set of  representative codelets.  Then, a
-              clustering algorithm analyzes the invocation performance trace of each
-              codelet to find a representative subset of invocations. The memory and
-              cache state of each representative invocation is then captured and dumped
-              to disk.  The output of this process is a set of representative codelets
-              and invocations, which can be redistributed, recompiled and replayed on
-              different systems and architectures. The codelet set can be used as a proxy
-              for original application in optimization or benchmarking studies.
-            </p>
-          </div>
-          <div id="contact" class="subgroup">
-            <h3>Get in touch</h3>
-            <p>
-              We will soon create a mailing list to discuss CERE development. In the meantime
-              please contact <a href="mailto:pablo.oliveira@uvsq.fr">pablo.oliveira@uvsq.fr</a> for any
-              question regarding CERE.
-            </p>
-          </div>
-        </section>
-        <section id="GettingCERE" class="group">
-          <h2>Getting CERE</h2>
-
-          <div id="download" class="subgroup">
-            <h3>Download CERE</h3>
-
-            <p>
-              We are in the process of preparing CERE for public release. CERE sources should be
-              available in 2015. In the meantime, if you would like to try CERE,
-              please <a href="index.html#contact">send us a mail</a>.
-            </p>
-
-          </div>
-
-          <div id="install" class="subgroup">
-            <h3>Install CERE</h3>
-
-            <h4>Prerequisites</h4>
-            <p>CERE requires LLVM and Clang compiler. The current version works with both LLVM 3.3 and LLVM 3.4, but has been extensively tested with LLVM 3.3.</p>
-            <ul>
-              <li>You can download LLVM and all its components here: <a href="http://llvm.org/releases/download.html#3.3">LLVM 3.3</a></li>
-              <li>Informations on how to extract and build LLVM can be found here: <a href="http://llvm.org/docs/GettingStarted.html#getting-started-quickly-a-summary">Building and installing LLVM</a></li>
-              <li>You also need the DragonEgg plugin to compile Fortran code with LLVM: <a href="http://dragonegg.llvm.org">DragonEgg</a></li>
-              <li>If you have difficulties compiling DragonEgg with GCC &gt; 4.7, consider using GCC 4.7: "update-alternatives --config gcc" to choose between installed version of GCC (Debian/Ubuntu).</li>
-              <li> Finally install autotools: "sudo apt-get install autotools-dev automake autoconf libtool" (Debian/Ubuntu).</li>
-            </ul>
-
-            <h4>Installation steps</h4>
-            <ol>
-              <li>Unzip CERE.</li>
-              <li>./autogen.sh</li>
-              <li>make</li>
-              <li>Run the testsuite to check that everything is working:
-                <ol>
-                  <li>cd tests</li>
-                  <li>./test.sh</li>
-                </ol>
-              </li>
-            </ol>
-
-            <h4>Known Issues</h4>
-            <p>Problems compiling Fortran code with CERE:</p>
-            <ul>
-              <li>Check that DRAGONEGG_PATH in CERE/src/lec/lec is correctly pointing to the file dragonegg.so.</li>
-              <li>By default CERE uses GCC 4.7. If you have compiled Dragonegg with a different version of GCC it might be the cause of your errors.
-                Check that LD in CERE/src/lec/lec and in CERE/src/lel/lel is set to the version of GCC you used to compile Dragonegg.</li>
-            </ul>
-          </div>
-        </section>
-        <section id="Reports" class="group">
-          <h2>Replay Accuracy Reports</h2>
-
-          <div id="NASSER" class="subgroup">
-            <h3>NAS 3.0 SER</h3>
-
-            <table class="table table-striped">
-              <thead>
-                <tr>
-                  <th>Benchmark
-                  </th>
-                  <th>Description</th>
-                </tr>
-              </thead>
-              <tbody>
-                <tr>
-                  <td><a href="./reports/NAS3.0-SER/BT.html">BT</a> </td>
-                  <td>Block Tri-diagonal solver</td>
-                </tr>
-                <tr>
-                  <td><a href="./reports/NAS3.0-SER/CG.html">CG</a> </td>
-                  <td>Conjugate Gradient</td>
-                </tr>
-                <tr>
-                  <td><a href="./reports/NAS3.0-SER/EP.html">EP</a> </td>
-                  <td>Embarrassingly Parallel</td>
-                </tr>
-                <tr>
-                  <td><a href="./reports/NAS3.0-SER/FT.html">FT</a> </td>
-                  <td>Discrete 3D fast Fourier Transformation</td>
-                </tr>
-                <tr>
-                  <td><a href="./reports/NAS3.0-SER/IS.html">IS</a> </td>
-                  <td>Integer Sort</td>
-                </tr>
-                <tr>
-                  <td><a href="./reports/NAS3.0-SER/LU.html">LU</a> </td>
-                  <td>Lower-Upper Gauss-Seidel solver</td>
-                </tr>
-                <tr>
-                  <td><a href="./reports/NAS3.0-SER/MG.html">MG</a> </td>
-                  <td>Multi-Grid on a sequence of meshes</td>
-                </tr>
-                <tr>
-                  <td><a href="./reports/NAS3.0-SER/SP.html">SP</a> </td>
-                  <td>Scalar Penta-diagonal solver</td>
-                </tr>
-              </tbody>
-            </table>
-          </div>
-
-          <div id="SPECCPU2006" class="subgroup">
-            <h3>SPEC CPU 2006</h3>
-
-            <table class="table table-striped">
-              <thead>
-                <tr>
-                  <th>Benchmark
-                  </th>
-                  <th>Description</th>
-                </tr>
-              </thead>
-              <tbody>
-                <tr>
-                  <td><a href="./reports/SPEC-CPU-2006/410-bwaves.html">410-bwaves</a></td>
-                  <td>Fluid Dynamics</td>
-                </tr>
-                <tr>
-                  <td><a href="./reports/SPEC-CPU-2006/416-gamess.html">416-gamess</a></td>
-                  <td>Quantum Chemistry</td>
-                </tr>
-                <tr>
-                  <td><a href="./reports/SPEC-CPU-2006/433-milc.html">433-milc</a> </td>
-                  <td>Quantum Chromodynamics</td>
-                </tr>
-                <tr>
-                  <td><a href="./reports/SPEC-CPU-2006/434-zeusmp.html">434-zeusmp</a> </td>
-                  <td>CFD</td>
-                </tr>
-                <tr>
-                  <td><a href="./reports/SPEC-CPU-2006/435-gromacs.html">435-gromacs</a> </td>
-                  <td>Biochemistry: Molecular Dynamics</td>
-                </tr>
-                <tr>
-                  <td><a href="./reports/SPEC-CPU-2006/436-cactusADM.html">436-cactusADM.html</a> </td>
-                  <td>General Relativity</td>
-                </tr>
-                <tr>
-                  <td><a href="./reports/SPEC-CPU-2006/437-leslie3d.html">437-leslie3d</a> </td>
-                  <td>Fluid Dynamics</td>
-                </tr>
-                <tr>
-                  <td><a href="./reports/SPEC-CPU-2006/444-namd.html">444-namd</a> </td>
-                  <td>Biology: Molecular Dynamics</td>
-                </tr>
-                <tr>
-                  <td><a href="./reports/SPEC-CPU-2006/447-dealII.html">447-dealII</a> </td>
-                  <td>Finite Element Analysis</td>
-                </tr>
-                <tr>
-                  <td><a href="./reports/SPEC-CPU-2006/450-soplex.html">450-soplex</a> </td>
-                  <td>Linear Programming, Optimization</td>
-                </tr>
-                <tr>
-                  <td><a href="./reports/SPEC-CPU-2006/453-povray.html">453-povray</a> </td>
-                  <td>Image Ray-tracing</td>
-                </tr>
-                <tr>
-                  <td><a href="./reports/SPEC-CPU-2006/454-calculix.html">454-calculix</a> </td>
-                  <td>Structural Mechanics</td>
-                </tr>
-                <tr>
-                  <td><a href="./reports/SPEC-CPU-2006/459-GemsFDTD.html">459-GemsFDTD</a> </td>
-                  <td>Computational Electromagnetics</td>
-                </tr>
-                <tr>
-                  <td><a href="./reports/SPEC-CPU-2006/465-tonto.html">465-tonto</a> </td>
-                  <td>Quantum Chemistry</td>
-                </tr>
-                <tr>
-                  <td><a href="./reports/SPEC-CPU-2006/470-lbm.html">470-lbm</a> </td>
-                  <td>Fluid Dynamics</td>
-                </tr>
-                <tr>
-                  <td><a href="./reports/SPEC-CPU-2006/481-wrf.html">481-wrf</a> </td>
-                  <td>Weather Prediction</td>
-                </tr>
-                <tr>
-                  <td><a href="./reports/SPEC-CPU-2006/482-sphinx3.html">482-sphinx3</a> </td>
-                  <td>Speech recognition</td>
-                </tr>
-                <tr>
-                  <td><a href="./reports/SPEC-CPU-2006/999-specrand.html">999-specrand</a> </td>
-                  <td>Random Number Generation</td>
-                </tr>
-              </tbody>
-            </table>
-          </div>
-
-      </div>
+        </div>
+        <div id="howitworks" class="subgroup">
+          <h3>How does it works?</h3>
+          <p>
+            CERE takes as an input the source files of an application or a benchmark
+            suite. All the languages supported by the LLVM front-ends (C, C++, Fortran,
+            D, etc.) are accepted. The application loops are outlined and instrumented
+            with profiling probes to identify the application hotspots. The hot loops
+            are kept and form the full codelet set. CERE can prune this full codelet
+            set and only keep a reduced set of  representative codelets.  Then, a
+            clustering algorithm analyzes the invocation performance trace of each
+            codelet to find a representative subset of invocations. The memory and
+            cache state of each representative invocation is then captured and dumped
+            to disk.  The output of this process is a set of representative codelets
+            and invocations, which can be redistributed, recompiled and replayed on
+            different systems and architectures. The codelet set can be used as a proxy
+            for original application in optimization or benchmarking studies.
+          </p>
+        </div>
+        <div id="contact" class="subgroup">
+          <h3>Get in touch</h3>
+          <p>
+            We will soon create a mailing list to discuss CERE development. In the meantime
+            please contact <a href="mailto:pablo.oliveira@uvsq.fr">pablo.oliveira@uvsq.fr</a> for any
+            question regarding CERE.
+          </p>
+        </div>
       </section>
+      <section id="GettingCERE" class="group">
+        <h2>Getting CERE</h2>
+
+        <div id="download" class="subgroup">
+          <h3>Download CERE</h3>
+
+          <p>
+            We are in the process of preparing CERE for public release. CERE sources should be
+            available in 2015. In the meantime, if you would like to try CERE,
+            please <a href="index.html#contact">send us a mail</a>.
+          </p>
+
+        </div>
+
+        <div id="install" class="subgroup">
+          <h3>Install CERE</h3>
+
+          <h4>Prerequisites</h4>
+          <p>CERE requires LLVM and Clang compiler. The current version works with both LLVM 3.3 and LLVM 3.4, but has been extensively tested with LLVM 3.3.</p>
+          <ul>
+            <li>You can download LLVM and all its components here: <a href="http://llvm.org/releases/download.html#3.3">LLVM 3.3</a></li>
+            <li>Informations on how to extract and build LLVM can be found here: <a href="http://llvm.org/docs/GettingStarted.html#getting-started-quickly-a-summary">Building and installing LLVM</a></li>
+            <li>You also need the DragonEgg plugin to compile Fortran code with LLVM: <a href="http://dragonegg.llvm.org">DragonEgg</a></li>
+            <li>If you have difficulties compiling DragonEgg with GCC &gt; 4.7, consider using GCC 4.7: "update-alternatives --config gcc" to choose between installed version of GCC (Debian/Ubuntu).</li>
+            <li> Finally install autotools: "sudo apt-get install autotools-dev automake autoconf libtool" (Debian/Ubuntu).</li>
+          </ul>
+
+          <h4>Installation steps</h4>
+          <ol>
+            <li>Unzip CERE.</li>
+            <li>./autogen.sh</li>
+            <li>make</li>
+            <li>Run the testsuite to check that everything is working:
+              <ol>
+                <li>cd tests</li>
+                <li>./test.sh</li>
+              </ol>
+            </li>
+          </ol>
+
+          <h4>Known Issues</h4>
+          <p>Problems compiling Fortran code with CERE:</p>
+          <ul>
+            <li>Check that DRAGONEGG_PATH in CERE/src/lec/lec is correctly pointing to the file dragonegg.so.</li>
+            <li>By default CERE uses GCC 4.7. If you have compiled Dragonegg with a different version of GCC it might be the cause of your errors.
+              Check that LD in CERE/src/lec/lec and in CERE/src/lel/lel is set to the version of GCC you used to compile Dragonegg.</li>
+          </ul>
+        </div>
+      </section>
+      <section id="Reports" class="group">
+        <h2>Replay Accuracy Reports</h2>
+
+        <div id="NASSER" class="subgroup">
+          <h3>NAS 3.0 SER</h3>
+
+          <table class="table table-striped">
+            <thead>
+              <tr>
+                <th>Benchmark
+                </th>
+                <th>Description</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td><a href="./reports/NAS3.0-SER/BT.html">BT</a> </td>
+                <td>Block Tri-diagonal solver</td>
+              </tr>
+              <tr>
+                <td><a href="./reports/NAS3.0-SER/CG.html">CG</a> </td>
+                <td>Conjugate Gradient</td>
+              </tr>
+              <tr>
+                <td><a href="./reports/NAS3.0-SER/EP.html">EP</a> </td>
+                <td>Embarrassingly Parallel</td>
+              </tr>
+              <tr>
+                <td><a href="./reports/NAS3.0-SER/FT.html">FT</a> </td>
+                <td>Discrete 3D fast Fourier Transformation</td>
+              </tr>
+              <tr>
+                <td><a href="./reports/NAS3.0-SER/IS.html">IS</a> </td>
+                <td>Integer Sort</td>
+              </tr>
+              <tr>
+                <td><a href="./reports/NAS3.0-SER/LU.html">LU</a> </td>
+                <td>Lower-Upper Gauss-Seidel solver</td>
+              </tr>
+              <tr>
+                <td><a href="./reports/NAS3.0-SER/MG.html">MG</a> </td>
+                <td>Multi-Grid on a sequence of meshes</td>
+              </tr>
+              <tr>
+                <td><a href="./reports/NAS3.0-SER/SP.html">SP</a> </td>
+                <td>Scalar Penta-diagonal solver</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+
+        <div id="SPECCPU2006" class="subgroup">
+          <h3>SPEC CPU 2006</h3>
+
+          <table class="table table-striped">
+            <thead>
+              <tr>
+                <th>Benchmark
+                </th>
+                <th>Description</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td><a href="./reports/SPEC-CPU-2006/410-bwaves.html">410-bwaves</a></td>
+                <td>Fluid Dynamics</td>
+              </tr>
+              <tr>
+                <td><a href="./reports/SPEC-CPU-2006/416-gamess.html">416-gamess</a></td>
+                <td>Quantum Chemistry</td>
+              </tr>
+              <tr>
+                <td><a href="./reports/SPEC-CPU-2006/433-milc.html">433-milc</a> </td>
+                <td>Quantum Chromodynamics</td>
+              </tr>
+              <tr>
+                <td><a href="./reports/SPEC-CPU-2006/434-zeusmp.html">434-zeusmp</a> </td>
+                <td>CFD</td>
+              </tr>
+              <tr>
+                <td><a href="./reports/SPEC-CPU-2006/435-gromacs.html">435-gromacs</a> </td>
+                <td>Biochemistry: Molecular Dynamics</td>
+              </tr>
+              <tr>
+                <td><a href="./reports/SPEC-CPU-2006/436-cactusADM.html">436-cactusADM.html</a> </td>
+                <td>General Relativity</td>
+              </tr>
+              <tr>
+                <td><a href="./reports/SPEC-CPU-2006/437-leslie3d.html">437-leslie3d</a> </td>
+                <td>Fluid Dynamics</td>
+              </tr>
+              <tr>
+                <td><a href="./reports/SPEC-CPU-2006/444-namd.html">444-namd</a> </td>
+                <td>Biology: Molecular Dynamics</td>
+              </tr>
+              <tr>
+                <td><a href="./reports/SPEC-CPU-2006/447-dealII.html">447-dealII</a> </td>
+                <td>Finite Element Analysis</td>
+              </tr>
+              <tr>
+                <td><a href="./reports/SPEC-CPU-2006/450-soplex.html">450-soplex</a> </td>
+                <td>Linear Programming, Optimization</td>
+              </tr>
+              <tr>
+                <td><a href="./reports/SPEC-CPU-2006/453-povray.html">453-povray</a> </td>
+                <td>Image Ray-tracing</td>
+              </tr>
+              <tr>
+                <td><a href="./reports/SPEC-CPU-2006/454-calculix.html">454-calculix</a> </td>
+                <td>Structural Mechanics</td>
+              </tr>
+              <tr>
+                <td><a href="./reports/SPEC-CPU-2006/459-GemsFDTD.html">459-GemsFDTD</a> </td>
+                <td>Computational Electromagnetics</td>
+              </tr>
+              <tr>
+                <td><a href="./reports/SPEC-CPU-2006/465-tonto.html">465-tonto</a> </td>
+                <td>Quantum Chemistry</td>
+              </tr>
+              <tr>
+                <td><a href="./reports/SPEC-CPU-2006/470-lbm.html">470-lbm</a> </td>
+                <td>Fluid Dynamics</td>
+              </tr>
+              <tr>
+                <td><a href="./reports/SPEC-CPU-2006/481-wrf.html">481-wrf</a> </td>
+                <td>Weather Prediction</td>
+              </tr>
+              <tr>
+                <td><a href="./reports/SPEC-CPU-2006/482-sphinx3.html">482-sphinx3</a> </td>
+                <td>Speech recognition</td>
+              </tr>
+              <tr>
+                <td><a href="./reports/SPEC-CPU-2006/999-specrand.html">999-specrand</a> </td>
+                <td>Random Number Generation</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+
+    </div>
+    </section>
 </div>
 </div>
 
 
-    <script src="https://code.jquery.com/jquery-1.11.2.min.js"></script>
-    <script src="https://code.jquery.com/ui/1.11.3/jquery-ui.min.js"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/js/bootstrap.min.js"></script>
-    <script>
-      $('body').scrollspy({
-      target: '.bs-docs-sidebar',
-      offset: 40
-      });
-    </script>
+<script src="https://code.jquery.com/jquery-1.11.2.min.js"></script>
+<script src="https://code.jquery.com/ui/1.11.3/jquery-ui.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/js/bootstrap.min.js"></script>
+<script>
+  $('body').scrollspy({
+  target: '.bs-docs-sidebar',
+  offset: 40
+  });
+</script>
 
-  </body>
+</body>
 </html>

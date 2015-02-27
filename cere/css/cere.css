@@ -1,5 +1,5 @@
 .group {
-    width: 684px;
+    max-width: 684px;
     text-align:justify;
 }
 
@@ -37,9 +37,6 @@ p {
 
 .group .subgroup {
 }
-.fixed {
-    position: fixed;
-}
 
 .image {
     padding-bottom: 20px;
@@ -49,8 +46,10 @@ p {
     padding-bottom: 40px;
 }
 
+
 /* sidebar */
 .bs-docs-sidebar {
+    width: 300px;
     padding-left: 20px;
     margin-top: 20px;
     margin-bottom: 20px;
@@ -95,11 +94,20 @@ p {
     font-weight: 500;
 }
 
-/* hide inactive nested list */
-.bs-docs-sidebar .nav ul.nav {
-    display: none;
-}
-/* show active nested list */
-.bs-docs-sidebar .nav>.active>ul.nav {
-    display: block;
+/* Make the left navbar fixed and collapsed only on big
+   screens */
+@media (min-width: 984px) {
+    .fixed {
+        position: fixed;
+    }
+
+    /* hide inactive nested list */
+    .bs-docs-sidebar .nav ul.nav {
+        display: none;
+    }
+    /* show active nested list */
+    .bs-docs-sidebar .nav>.active>ul.nav {
+        display: block;
+    }
+
 }
