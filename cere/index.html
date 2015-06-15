@@ -51,11 +51,7 @@
           <a href="#Reports">CERE accuracy reports</a>
           <ul class="nav nav-stacked">
             <li><a href="#NASSER">NAS 3.0 SER</a></li>
-            <li><a href="#SPECCPU2006">SPEC CPU 2006</a></li>
-          </ul>
-        </li>
-      </ul>
-    </nav>
+            <li><a href="#SPECCPU2006">SPEC CPU 2006</a></lin doc that    </        </ </ul>     </nav>
 
     <!--Main Content -->
     <div class="col-xs-9">
@@ -141,9 +137,9 @@
         <div id="contact" class="subgroup">
           <h3>Get in touch</h3>
           <p>
-            We will soon create a mailing list to discuss CERE development. In the meantime
-            please contact <a href="mailto:pablo.oliveira@uvsq.fr">pablo.oliveira@uvsq.fr</a> for any
-            question regarding CERE.
+            For questions or discussions please use the
+            <a href="https://groups.google.com/forum/#!forum/cere-dev">cere-dev@googlegroups.com</a>
+            mailing list.
           </p>
         </div>
       </section>
@@ -153,47 +149,19 @@
         <div id="download" class="subgroup">
           <h3>Download CERE</h3>
 
-          <p>
-            We are in the process of preparing CERE for public release. CERE sources should be
-            available in 2015. In the meantime, if you would like to try CERE,
-            please <a href="index.html#contact">send us a mail</a>.
+          <p>CERE is distributed under the GNU Lesser General Public License.
+            Sources and latest releases are available at https://github.com/benchmark-subsetting/cere
+          </p>
+
           </p>
 
         </div>
 
         <div id="install" class="subgroup">
           <h3>Install CERE</h3>
-
-          <h4>Prerequisites</h4>
-          <p>CERE requires LLVM and Clang compiler. The current version works with both LLVM 3.3 and LLVM 3.4, but has been extensively tested with LLVM 3.3.</p>
-          <ul>
-            <li>You can download LLVM and all its components here: <a href="http://llvm.org/releases/download.html#3.3">LLVM 3.3</a></li>
-            <li>Informations on how to extract and build LLVM can be found here: <a href="http://llvm.org/docs/GettingStarted.html#getting-started-quickly-a-summary">Building and installing LLVM</a></li>
-            <li>You also need the DragonEgg plugin to compile Fortran code with LLVM: <a href="http://dragonegg.llvm.org">DragonEgg</a></li>
-            <li>If you have difficulties compiling DragonEgg with GCC &gt; 4.7, consider using GCC 4.7: "update-alternatives --config gcc" to choose between installed version of GCC (Debian/Ubuntu).</li>
-            <li> Finally install autotools: "sudo apt-get install autotools-dev automake autoconf libtool" (Debian/Ubuntu).</li>
-          </ul>
-
-          <h4>Installation steps</h4>
-          <ol>
-            <li>Unzip CERE.</li>
-            <li>./autogen.sh</li>
-            <li>make</li>
-            <li>Run the testsuite to check that everything is working:
-              <ol>
-                <li>cd tests</li>
-                <li>./test.sh</li>
-              </ol>
-            </li>
-          </ol>
-
-          <h4>Known Issues</h4>
-          <p>Problems compiling Fortran code with CERE:</p>
-          <ul>
-            <li>Check that DRAGONEGG_PATH in CERE/src/lec/lec is correctly pointing to the file dragonegg.so.</li>
-            <li>By default CERE uses GCC 4.7. If you have compiled Dragonegg with a different version of GCC it might be the cause of your errors.
-              Check that LD in CERE/src/lec/lec and in CERE/src/lel/lel is set to the version of GCC you used to compile Dragonegg.</li>
-          </ul>
+          <p>
+          Please follow the instructions <a href="https://github.com/benchmark-subsetting/cere/blob/master/INSTALL.md">here</a>.
+          </p>
         </div>
       </section>
       <section id="Reports" class="group">
