@@ -1,0 +1,15 @@
+#body {
+    text-align: justify;
+}
+
+#main {
+    margin-left: 50px;
+    margin-top: 0px;
+    max-width: 800px;
+}
+
+#footer {
+  color: gray;
+  position:relative;
+  font-style: italic;
+}
