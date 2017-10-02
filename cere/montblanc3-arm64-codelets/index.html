@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="" xml:lang="">
+<head>
+  <meta charset="utf-8" />
+  <meta name="generator" content="pandoc" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+  <title>MontBlanc 3 – ARMv8 (arm64) standalone codelet repository</title>
+  <style type="text/css">
+      code{white-space: pre-wrap;}
+      .smallcaps{font-variant: small-caps;}
+      .line-block{white-space: pre-line;}
+      .column{display: inline-block;}
+  </style>
+  <style type="text/css">
+div.sourceCode { overflow-x: auto; }
+table.sourceCode, tr.sourceCode, td.lineNumbers, td.sourceCode {
+  margin: 0; padding: 0; vertical-align: baseline; border: none; }
+table.sourceCode { width: 100%; line-height: 100%; }
+td.lineNumbers { text-align: right; padding-right: 4px; padding-left: 4px; color: #aaaaaa; border-right: 1px solid #aaaaaa; }
+td.sourceCode { padding-left: 5px; }
+code > span.kw { color: #007020; font-weight: bold; } /* Keyword */
+code > span.dt { color: #902000; } /* DataType */
+code > span.dv { color: #40a070; } /* DecVal */
+code > span.bn { color: #40a070; } /* BaseN */
+code > span.fl { color: #40a070; } /* Float */
+code > span.ch { color: #4070a0; } /* Char */
+code > span.st { color: #4070a0; } /* String */
+code > span.co { color: #60a0b0; font-style: italic; } /* Comment */
+code > span.ot { color: #007020; } /* Other */
+code > span.al { color: #ff0000; font-weight: bold; } /* Alert */
+code > span.fu { color: #06287e; } /* Function */
+code > span.er { color: #ff0000; font-weight: bold; } /* Error */
+code > span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warning */
+code > span.cn { color: #880000; } /* Constant */
+code > span.sc { color: #4070a0; } /* SpecialChar */
+code > span.vs { color: #4070a0; } /* VerbatimString */
+code > span.ss { color: #bb6688; } /* SpecialString */
+code > span.im { } /* Import */
+code > span.va { color: #19177c; } /* Variable */
+code > span.cf { color: #007020; font-weight: bold; } /* ControlFlow */
+code > span.op { color: #666666; } /* Operator */
+code > span.bu { } /* BuiltIn */
+code > span.ex { } /* Extension */
+code > span.pp { color: #bc7a00; } /* Preprocessor */
+code > span.at { color: #7d9029; } /* Attribute */
+code > span.do { color: #ba2121; font-style: italic; } /* Documentation */
+code > span.an { color: #60a0b0; font-weight: bold; font-style: italic; } /* Annotation */
+code > span.cv { color: #60a0b0; font-weight: bold; font-style: italic; } /* CommentVar */
+code > span.in { color: #60a0b0; font-weight: bold; font-style: italic; } /* Information */
+  </style>
+  <!--[if lt IE 9]>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv-printshiv.min.js"></script>
+  <![endif]-->
+</head>
+<body>
+<header>
+<h1 class="title">MontBlanc 3 – ARMv8 (arm64) standalone codelet repository</h1>
+</header>
+<p>This is a repository for a set of codelets for ARMv8 extracted from representative regions and applications from the Montblanc 3 project.</p>
+<p>For any question on this repository please contact Pablo Oliveira at University of Versailles (UVSQ) at pablo DOT oliveira AT uvsq DOT fr.</p>
+<h2 id="manifest">Manifest</h2>
+<p>This repository contains the following codelets</p>
+<table>
+<thead>
+<tr class="header">
+<th style="text-align: left;">Codelet</th>
+<th style="text-align: left;">Region</th>
+<th>Line</th>
+<th>Invocation(s)</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td style="text-align: left;">[lulesh][1]</td>
+<td style="text-align: left;">CalcFBHourglassForceForElems_Domain</td>
+<td>810</td>
+<td>16,261</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">[eikonal][2]</td>
+<td style="text-align: left;">UpdateScheme:updateScheme_updateEv</td>
+<td>204</td>
+<td>42</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">[npb3.0-is][3]</td>
+<td style="text-align: left;">is_rank</td>
+<td>475</td>
+<td>11</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">[blackscholes][4]</td>
+<td style="text-align: left;">bs_thread</td>
+<td>368</td>
+<td>10</td>
+</tr>
+</tbody>
+</table>
+<p><a href="./lulesh.tar.xz">1</a> <a href="./eikonal.tar.xz">2</a> <a href="./npb3.0-is.tar.xz">3</a> <a href="./blackscholes.tar.xz">4</a></p>
+<h2 id="origin-and-licences">Origin and Licences</h2>
+<p>The codelets have been extracted from the following applications. Please refer to each original program for the licence information.</p>
+<p><a href="https://codesign.llnl.gov/lulesh.php">Lulesh</a> is the Livermore Unstructured Lagrangian Explicit Shock Hydrodynamics.</p>
+<p><a href="http://imsc.uni-graz.at/haasegu/">Eikonal</a> is an Eikonal solver developed at the University of Graz by Prof. Gundolf Haase.</p>
+<p><a href="https://www.nas.nasa.gov/publications/npb.html">NPB3.O-IS</a> is an Integer Sort from NASA parallel benchmarks.</p>
+<p><a href="http://parsec.cs.princeton.edu/overview.htm">blackscholes</a> solves the Blackscholes PDE it belongs to the PARSEC benchmark suite.</p>
+<h2 id="how-to-use-codelets">How to use codelets</h2>
+<p>In the following we will show how to use the codelets. A codelet captures as a standalone application a short representative slice of a large program. It can be used as a proxy for performance analysis, simulation, optimization. Instead of running the whole program, once concentrate in a small region.</p>
+<p>We illustrate how to use the codelets with the Blackscholes codelet.</p>
+<p>First unpack the archive and go to the working directory,</p>
+<div class="sourceCode"><pre class="sourceCode bash"><code class="sourceCode bash">$ <span class="fu">tar</span> xvf blackscholes.tar.xz
+$ <span class="bu">cd</span> blackscholes/</code></pre></div>
+<p>To measure performance one should use the CERE instrumentation library. The standard CERE instrumentation library <code>libcere_instrument.so.0</code> returns in ARMv8 the number of cycles according to the <code>cntvct_el0</code> cycle counter. See below how to replace the library to use your own instrumentation hooks.</p>
+<p>First one, should copy the instrumentation library used to the working directory. To use the standard <code>cntvct_el0</code> instrumentation use,</p>
+<div class="sourceCode"><pre class="sourceCode bash"><code class="sourceCode bash">$ <span class="fu">wget</span> https://benchmark-subsetting.github.io/cere/montblanc3-arm64-codelets/libcere_instrument.so.0</code></pre></div>
+<h3 id="run-the-original">Run the original</h3>
+<p>Each codelet comes with the original application bundled within, to be used as a reference. The file <code>how-run-original.txt</code> explains how to launch the original program.</p>
+<p>For blackscholes,</p>
+<div class="sourceCode"><pre class="sourceCode bash"><code class="sourceCode bash">$ <span class="ex">./blackscholes-original</span> <span class="op">&lt;</span>nbthreads<span class="op">&gt;</span> in_64K.txt out.txt</code></pre></div>
+<p>After running with 4 threads, for example. We can get the performance of the region of interest (in blackscholes.m4.cpp starts at line 368):</p>
+<div class="sourceCode"><pre class="sourceCode bash"><code class="sourceCode bash">$ <span class="fu">cat</span> __cere__blackscholes_m4__Z9bs_threadPv_368.csv 
+<span class="ex">Codelet</span> Name,Call Count,CPU_CLK_UNHALTED_CORE
+<span class="ex">__cere__blackscholes_m4__Z9bs_threadPv_368</span>,1,1395254</code></pre></div>
+<p>This is measured with <code>mrs %0, cntvct_el0</code>, where for example 50000000 cycles ~ 1 second in a Juno r1 platform.</p>
+<h3 id="run-the-codelet">Run the codelet:</h3>
+<p>One can set the number of threads,</p>
+<pre><code>$ export OMP_NUM_THREADS=&lt;nbthreads&gt; 4</code></pre>
+<p>or even select a detailed affinity,</p>
+<pre><code>$ export KMP_AFFINITY=&quot;verbose,granularity=fine,proclist=[4,5,3,{0,1,2}],explicit&quot; </code></pre>
+<p>Then the codelet can be run with,</p>
+<pre><code>$ ./blackscholes-codelet
+$ cat __cere__blackscholes_m4__Z9bs_threadPv_368.csv
+Codelet Name,Call Count,CPU_CLK_UNHALTED_CORE
+__cere__blackscholes_m4__Z9bs_threadPv_368,1,1377455</code></pre>
+<h3 id="changing-the-number-of-repetitions-or-the-warmup-mode">Changing the number of repetitions or the warmup mode</h3>
+<p>The warmup mode and the number of repetitions can be changed using CERE environment variables. See CERE documentation for more details.</p>
+<h3 id="what-if-i-want-to-use-my-own-profiling-library">What if I want to use my own profiling library ?</h3>
+<p>When running codelets, CERE follows the following sequence:</p>
+<pre><code> warmup-code
+ codelet
+ warmup-code
+ codelet
+ ...</code></pre>
+<p>It is important that you do not measure the warmup code. For this we provide some hooks. In <code>cere/src/librdtsc/</code> you will find a small example of how to use hooks. You can modify this file by including calls to your own profiling library.</p>
+<ul>
+<li><code>cere_markerStartRegion</code> is called before entering the codelet regions of interest</li>
+<li><code>cere_markerStopRegion</code> is called after exiting the codelet regions of interest</li>
+</ul>
+<p>So for example for <code>gem5</code> you should call <code>m5_resetstats</code> in <code>cere_markerStartRegion</code> and call <code>m5_dumpstats</code> in <code>cere_markerStopRegion</code>.</p>
+<p>Once you have modified the wrappers, just do make and copy the <code>libcere_instrument.so.0</code> file to your working directory.</p>
+</body>
+</html>
