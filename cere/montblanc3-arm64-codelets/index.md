@@ -34,7 +34,7 @@ Please refer to each original program for the licence information.
 
 ## How to use codelets
 
-In the following we will show how to use the codelets. A codelet captures as a standalone application a short representative slice of a large program. It can be used as a proxy for performance analysis, simulation, optimization. Instead of running the whole program, once concentrate in a small region.
+In the following we will show how to use the codelets. A codelet captures as a standalone application a short representative slice of a large program. It can be used as a proxy for performance analysis, simulation, optimization. Instead of running the whole program, one concentrate in a small region.
 
 We illustrate how to use the codelets with the Blackscholes codelet.
 
