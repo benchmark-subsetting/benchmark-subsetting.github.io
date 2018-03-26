@@ -50,7 +50,7 @@ The standard CERE instrumentation library `libcere_instrument.so.0` returns
 in ARMv8 the number of cycles according to the `cntvct_el0` cycle counter.
 See below how to replace the library to use your own instrumentation hooks.
 
-First one, should copy the instrumentation library used to the working directory.
+First one, should copy the [instrumentation library](./libcere_instrument.so.0) used to the working directory.
 To use the standard `cntvct_el0` instrumentation use,
 
 ```bash
@@ -118,8 +118,8 @@ When running codelets, CERE follows the following sequence:
      ...
 
 It is important that you do not measure the warmup code. For this we provide
-some hooks.  In `cere/src/librdtsc/` you will find a small example of how to
-use hooks.  You can modify this file by including calls to your own profiling
+some hooks.  In [`cere/src/rdtsc/`](https://github.com/benchmark-subsetting/cere/tree/master/src/rdtsc) 
+you will find a small example of how to use hooks.  You can modify this file by including calls to your own profiling
 library.
 
 * `cere_markerStartRegion` is called before entering the codelet regions of interest
