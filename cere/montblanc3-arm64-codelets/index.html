@@ -57,6 +57,18 @@ code > span.in { color: #60a0b0; font-weight: bold; font-style: italic; } /* Inf
 <header>
 <h1 class="title">MontBlanc 3 – ARMv8 (arm64) standalone codelet repository</h1>
 </header>
+<nav id="TOC">
+<ul>
+<li><a href="#manifest">Manifest</a></li>
+<li><a href="#origin-and-licences">Origin and Licences</a></li>
+<li><a href="#how-to-use-codelets">How to use codelets</a><ul>
+<li><a href="#run-the-original">Run the original</a></li>
+<li><a href="#run-the-codelet">Run the codelet:</a></li>
+<li><a href="#changing-the-number-of-repetitions-or-the-warmup-mode">Changing the number of repetitions or the warmup mode</a></li>
+<li><a href="#what-if-i-want-to-use-my-own-profiling-library">What if I want to use my own profiling library ?</a></li>
+</ul></li>
+</ul>
+</nav>
 <p>This is a repository for a set of codelets for ARMv8 extracted from representative regions and applications from the Montblanc 3 project.</p>
 <p>For any question on this repository please contact Pablo Oliveira at University of Versailles (UVSQ) at pablo DOT oliveira AT uvsq DOT fr.</p>
 <h2 id="manifest">Manifest</h2>
@@ -84,7 +96,7 @@ code > span.in { color: #60a0b0; font-weight: bold; font-style: italic; } /* Inf
 <td>42</td>
 </tr>
 <tr class="odd">
-<td style="text-align: left;"><a href="./npb3.0-is.tar.xz">npb3.0-is</a></td>
+<td style="text-align: left;"><a href="./npb3.0-IS.tar.xz">npb3.0-is</a></td>
 <td style="text-align: left;">is_rank</td>
 <td>475</td>
 <td>11</td>
@@ -110,7 +122,7 @@ code > span.in { color: #60a0b0; font-weight: bold; font-style: italic; } /* Inf
 <div class="sourceCode"><pre class="sourceCode bash"><code class="sourceCode bash">$ <span class="fu">tar</span> xvf blackscholes.tar.xz
 $ <span class="bu">cd</span> blackscholes/</code></pre></div>
 <p>To measure performance one should use the CERE instrumentation library. The standard CERE instrumentation library <code>libcere_instrument.so.0</code> returns in ARMv8 the number of cycles according to the <code>cntvct_el0</code> cycle counter. See below how to replace the library to use your own instrumentation hooks.</p>
-<p>First one, should copy the instrumentation library used to the working directory. To use the standard <code>cntvct_el0</code> instrumentation use,</p>
+<p>First one, should copy the <a href="./libcere_instrument.so.0">instrumentation library</a> used to the working directory. To use the standard <code>cntvct_el0</code> instrumentation use,</p>
 <div class="sourceCode"><pre class="sourceCode bash"><code class="sourceCode bash">$ <span class="fu">wget</span> https://benchmark-subsetting.github.io/cere/montblanc3-arm64-codelets/libcere_instrument.so.0</code></pre></div>
 <h3 id="run-the-original">Run the original</h3>
 <p>Each codelet comes with the original application bundled within, to be used as a reference. The file <code>how-run-original.txt</code> explains how to launch the original program.</p>
@@ -140,7 +152,7 @@ __cere__blackscholes_m4__Z9bs_threadPv_368,1,1377455</code></pre>
  warmup-code
  codelet
  ...</code></pre>
-<p>It is important that you do not measure the warmup code. For this we provide some hooks. In <code>cere/src/librdtsc/</code> you will find a small example of how to use hooks. You can modify this file by including calls to your own profiling library.</p>
+<p>It is important that you do not measure the warmup code. For this we provide some hooks. In <a href="https://github.com/benchmark-subsetting/cere/tree/master/src/rdtsc"><code>cere/src/rdtsc/</code></a> you will find a small example of how to use hooks. You can modify this file by including calls to your own profiling library.</p>
 <ul>
 <li><code>cere_markerStartRegion</code> is called before entering the codelet regions of interest</li>
 <li><code>cere_markerStopRegion</code> is called after exiting the codelet regions of interest</li>
