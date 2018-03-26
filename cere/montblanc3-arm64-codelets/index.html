@@ -63,7 +63,7 @@ code > span.in { color: #60a0b0; font-weight: bold; font-style: italic; } /* Inf
 <li><a href="#origin-and-licences">Origin and Licences</a></li>
 <li><a href="#how-to-use-codelets">How to use codelets</a><ul>
 <li><a href="#run-the-original">Run the original</a></li>
-<li><a href="#run-the-codelet">Run the codelet:</a></li>
+<li><a href="#run-the-codelet">Run the codelet</a></li>
 <li><a href="#changing-the-number-of-repetitions-or-the-warmup-mode">Changing the number of repetitions or the warmup mode</a></li>
 <li><a href="#what-if-i-want-to-use-my-own-profiling-library">What if I want to use my own profiling library ?</a></li>
 </ul></li>
@@ -133,7 +133,7 @@ $ <span class="bu">cd</span> blackscholes/</code></pre></div>
 <span class="ex">Codelet</span> Name,Call Count,CPU_CLK_UNHALTED_CORE
 <span class="ex">__cere__blackscholes_m4__Z9bs_threadPv_368</span>,1,1395254</code></pre></div>
 <p>This is measured with <code>mrs %0, cntvct_el0</code>, where for example 50000000 cycles ~ 1 second in a Juno r1 platform.</p>
-<h3 id="run-the-codelet">Run the codelet:</h3>
+<h3 id="run-the-codelet">Run the codelet</h3>
 <p>One can set the number of threads,</p>
 <pre><code>$ export OMP_NUM_THREADS=&lt;nbthreads&gt; 4</code></pre>
 <p>or even select a detailed affinity,</p>

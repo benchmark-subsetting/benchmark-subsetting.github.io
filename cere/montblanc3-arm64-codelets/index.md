@@ -80,7 +80,7 @@ __cere__blackscholes_m4__Z9bs_threadPv_368,1,1395254
 
 This is measured with `mrs %0, cntvct_el0`, where for example 50000000 cycles ~ 1 second in a Juno r1 platform.
 
-### Run the codelet:
+### Run the codelet
 One can set the number of threads,
 
 ```
