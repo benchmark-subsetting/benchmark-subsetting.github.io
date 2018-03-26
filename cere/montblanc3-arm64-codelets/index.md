@@ -16,7 +16,7 @@ Codelet                                Region                                 Li
 -------------------------------------- -------------------------------------- ----  -------------
 [lulesh](./lulesh.tar.xz)              CalcFBHourglassForceForElems_Domain    810   16,261
 [eikonal](./eikonal.tar.xz)            UpdateScheme:updateScheme_updateEv     204   42
-[npb3.0-is](./npb3.0-is.tar.xz)        is_rank                                475   11
+[npb3.0-is](./npb3.0-IS.tar.xz)        is_rank                                475   11
 [blackscholes](./blackscholes.tar.xz)  bs_thread                              368   10
 
 ## Origin and Licences
